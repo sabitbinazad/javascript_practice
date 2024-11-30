@@ -7,6 +7,8 @@ let userMessage;
 //switch
 let userType = "subscriber";
 let userCategory;
+//Ternary
+let isAuthenticated = true;
 
 //if else
 if (userRole === "admin") {
@@ -46,3 +48,7 @@ switch (userType) {
         userCategory = "Unknown";
 }
 console.log("User Category:", userCategory);
+
+//Ternary
+let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+console.log("Authentication Status:", authenticationStatus);
