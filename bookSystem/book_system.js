@@ -25,7 +25,9 @@ function showbooks() {
         <p><strong>Book Name: </strong>${book.name}</p>
         <p><strong>Author Name:</strong> ${book.authorName}</p>
         <p><strong>Book Description:</strong> ${book.bookDescription}</p>
-        <p><strong>No. of Pages:</strong> ${book.pagesNumber} page(s)</p>`
+        <p><strong>No. of Pages:</strong> ${book.pagesNumber} page(s)</p>
+        <!--delete button-->
+        <button onclick="deletebook(${index})">Delete Book</button>`
     );
     document.getElementById('books').innerHTML = booksDiv.join('');
 }  
@@ -37,3 +39,24 @@ function clearInputs() {
             document.getElementById('bookDescription').value = '';
             document.getElementById('pagesNumber').value = '';
  }
+
+
+
+function deletebook(index) {
+    if (index >= 0 && index < books.length) { // Check if index is valid
+        books.splice(index, 1); // Remove the book at the specified index
+        console.log(`Book at index ${index} has been deleted.`);
+        console.log("Updated books list:", books);
+    } else {
+        console.log("Invalid index. No book deleted.");
+    }
+}
+
+
+// for deleting
+function deletebook(index) {
+
+        books.splice(index, 1);
+        showbooks(); // Refresh the displayed list
+    
+}
