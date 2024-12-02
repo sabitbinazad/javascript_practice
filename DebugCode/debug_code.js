@@ -7,9 +7,13 @@
     if (!isNaN(num1) && !isNaN(num2)) {
     // Perform the operation
                     let result = multiply(num1, num2);
+                    let result1 = addition(num1, num2);
+                    let result2 = subtraction(num1, num2);
+                    let result3 = division(num1, num2);
 
                     // Display the result
-                    displayResult(result);
+                    displayResult(result, result1, result2, result3);
+                    
                 } else {
                     displayResult('Please enter valid numbers');
                 }
@@ -23,9 +27,33 @@
                 return a * b;
             }
 
-            function displayResult(result) {
+            function addition(a, b) {
+                // Introduce a debugger statement to pause execution
+                debugger;
+
+                // addition the numbers
+                return a + b;
+            }
+
+            function subtraction(a, b) {
+                // Introduce a debugger statement to pause execution
+                debugger;
+
+                // subtraction the numbers
+                return a - b;
+            }
+            function division(a, b) {
+                // Introduce a debugger statement to pause execution
+                debugger;
+
+                // division the numbers
+                return a / b;
+            }
+            function displayResult(result, result1, result2, result3) {
                 // Display the result in the paragraph element
                 const resultElement = document.getElementById('result');
-                resultElement.textContent = `The result is: ${result}`;
+                resultElement.innerHTML = `Multiplication: ${result} <br>
+                Addition: ${result1} <br> Subtraction: ${result2} <br> 
+                Division: ${result3} <br>`;
             }
         
