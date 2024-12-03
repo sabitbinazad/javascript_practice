@@ -1,0 +1,87 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 3rem;
+  color: #4caf50;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 5px;
+}
+
+/* Menu Item Styling */
+#breakfastMenuItems, #maincourseMenuItems, #dessertMenuItems {
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#breakfastMenuItems p, #maincourseMenuItems p, #dessertMenuItems p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+#breakfastMenuItems p:nth-child(odd), #maincourseMenuItems p:nth-child(odd), #dessertMenuItems p:nth-child(odd) {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#breakfastMenuItems p:nth-child(even), #maincourseMenuItems p:nth-child(even), #dessertMenuItems p:nth-child(even) {
+  background-color: #fafafa;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Menu Total Items Styling */
+#breakfastTotalItems, #maincourseTotalItems, #dessertTotalItems {
+  font-size: 1.5rem;
+  color: #4caf50;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  #breakfastMenuItems, #maincourseMenuItems, #dessertMenuItems {
+    max-width: 90%;
+  }
+}

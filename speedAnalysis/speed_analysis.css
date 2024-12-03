@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Labels */
+label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* Text Areas */
+textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  resize: none;
+}
+
+textarea[readonly] {
+  background: #dcdcdc;
+}
+
+textarea:focus {
+  outline: none;
+  border: 2px solid #00aaff;
+  box-shadow: 0 0 8px rgba(0, 170, 255, 0.5);
+}
+
+/* Buttons */
+button {
+  background: #00aaff;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #008ecc;
+  transform: scale(1.05);
+}
+
+button:active {
+  background: #006699;
+  transform: scale(0.95);
+}
+
+/* Output Section */
+#output {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  color: #333;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#output h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1e3c72;
+}
+
+#output p {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  textarea, button, #output {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}

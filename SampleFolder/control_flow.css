@@ -1,0 +1,74 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+  color: #333;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Code Block Styling */
+pre {
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-x: auto;
+}
+
+pre code {
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Console Output Styling */
+#consoleOutput {
+  background: #282c34;
+  color: #61dafb;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  pre, #consoleOutput {
+    width: 90%;
+  }
+}
